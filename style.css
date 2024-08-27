@@ -1,17 +1,30 @@
-body{
+
+body {
     margin: 0;
     padding: 0;
     background-color: rgb(253, 248, 248);
+    font-family: 'Arial', sans-serif;
 }
-header{
+
+header {
+    background: linear-gradient(to right, #4a90e2, #007aff);
     padding: 20px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+.logo {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 nav {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 nav ul {
@@ -21,123 +34,142 @@ nav ul {
     display: flex;
     gap: 20px;
 }
+
 nav ul li a {
-    color: rgb(75, 144, 204);
+    color: white;
     font-size: 1.2rem;
     text-decoration: none;
-    transition: color 0.5s ease;
-  
-}
-nav ul li a:hover{
-    background-color: blue;
-    border-radius: 1px;
-    color: rgb(255, 255, 255);
-    transition: scale(10.3) ;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-
-.ml img {
-    width: 100%;
-    width: 700px;
-    padding:40px;
-    margin-left: 250px;
-    
-
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
+
 .one {
     display: flex;
-    margin: 50px;
-    margin-bottom: 200px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    margin-bottom: 100px;
+    background: linear-gradient(to right, #f5f7fa, #c3cfe2);
 }
 
-.wel h2{
-    padding-top: 75px;
-    padding-bottom: 50px;
-    color: rgb(0, 82, 245);
+.wel h2 {
+    color: #007aff;
     text-align: center;
-
 }
 
-.wel p{
+.wel p {
     text-align: center;
-    color: rgb(123, 128, 101);
-    font-size: 3.0em;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-option{
-    padding: 20px;
+    color: #4a4a4a;
+    font-size: 2.5em;
+    font-family: 'Times New Roman', serif;
 }
 
 .wel select,
 .wel button {
     padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin-top: 30px;
     width: 200px;
-    
 }
 
-.wel button{
+.wel button {
     background-color: maroon;
-
-    color: aliceblue;
-    display: block
-}
-.wel select{
-    width: 350px;
-    align-items: center;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
 }
 
-.two{
+.wel button:hover {
+    background-color: #4a4a4a;
+}
+
+.ml img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.two {
     margin: 50px;
-
+    text-align: center;
 }
 
-.two h1, p{
-    color: rgb(78, 138, 226);
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
+.two h1, 
+.two p {
+    color: #4e8ae2;
 }
-.three{
+
+.three {
     margin: 30px;
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.box{
-    display: inline;
-    margin-left: 20px;
+.box {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.box p{
-    font-size: 2.0em;    
+.box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.box h3 , p{
-    text-align: left;
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.box h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.box h3, 
+.box p {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
     max-width: 90%;
-    font-family: Arial, Helvetica, sans-serif; 
-
-}
-.box img{
-    width: 430px;
-    height: 323px;
+    margin: 10px auto;
+    color: #555;
 }
 
 .box button {
     padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
     margin-top: 10px;
-    width: 100px;
-    background-color: rgb(182, 154, 220);
-    color: aliceblue;
+    width: 120px;
+    background-color: #007aff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.four{
+.box button:hover {
+    background-color: maroon;
+}
+
+.four {
     padding-left: 450px;
     margin-top: 75px;
     margin-bottom: 50px;
-    
+    text-align: center;
+    display: flex;
 }
 
 form {
@@ -145,12 +177,11 @@ form {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-
 }
 
 form label {
     margin-bottom: 5px;
-    
+    color: #333;
 }
 
 form input,
@@ -158,14 +189,18 @@ form select,
 form button {
     padding: 10px;
     margin-bottom: 20px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', sans-serif;
 }
 
 form button {
     background-color: maroon;
-    color: aliceblue;
-    
+    color: white;
     cursor: pointer;
     width: 200px;
+    border: none;
+    transition: background-color 0.3s ease;
 }
 
+form button:hover {
+    background-color: #4a4a4a;
+}
