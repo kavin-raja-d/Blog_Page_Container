@@ -204,3 +204,39 @@ form button {
 form button:hover {
     background-color: #4a4a4a;
 }
+@media (min-width: 768px) {
+    .one {
+        flex-direction: row;
+    }
+
+    .ml img {
+        max-width: 500px;
+    }
+
+    .wel p {
+        font-size: 2.2em;
+    }
+
+    nav {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1024px) {
+    nav ul li a {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+
+    .ml img {
+        max-width: 600px;
+    }
+
+    .wel p {
+        font-size: 2.5em;
+    }
+
+    .box {
+        max-width: 300px;
+    }
+}
