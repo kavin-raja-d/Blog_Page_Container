@@ -204,7 +204,7 @@ form button {
 form button:hover {
     background-color: #4a4a4a;
 }
-@media (min-width: 768px) {
+@media (min-width: 760px) {
     .one {
         flex-direction: row;
     }
